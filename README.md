@@ -40,16 +40,11 @@ You can download an example video here: https://drive.google.com/file/d/18GC5cFg
 When we run without tvm compiler, the command is : 
 
 ```
-python3 run_wotvm.py \
---model ./weights/dmd_finetune_TSM_e1000_b4_n4_mobilenetv2_lr0.000100_best.pth.tar \
---dataset dmd --video /home/anomaly/Desktop/video/dmd_1.mp4 \
---setting video
+python3 ./tvm_tsm/run_wotvm.py --model ./tvm_tsm/weights/dmd_finetune_TSM_e1000_b4_n4_mobilenetv2_lr0.000100_best.pth.tar --dataset dmd --video ./tvm_tsm/real_time_infer/IMG_1691.MOV --setting video
 ```
 
 ```
-python3 run_wotvm.py \
---model ./weights/dmd_finetune_TSM_e1000_b4_n4_mobilenetv2_lr0.000100_best.pth.tar \
---dataset dmd --setting camera
+python3 ./tvm_tsm/run_wotvm.py --model ./tvm_tsm/weights/dmd_finetune_TSM_e1000_b4_n4_mobilenetv2_lr0.000100_best.pth.tar --dataset dmd --setting camera
 ```
 
 
